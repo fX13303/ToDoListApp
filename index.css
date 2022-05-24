@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3949ab;
+}
+
+body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body div.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    padding: 15px 25px;
+    font-size: 24px;
+    border: none;
+    width: 100%;
+}
+
+
+.input {
+    padding: 15px 25px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #6f74dd;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+  
+.btn:hover {
+    background-color: #00227b;
+}
+  
+.btn:active {
+    background-color: #00227b;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.delete-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #f05545;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.delete-btn:hover {
+    background-color: #7f0000;
+}
+
+
+.checkbox {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+}
+
+.text {
+    margin: 10px;
+    width: 200px;
+}
+div > span {
+	margin-right: 20px;
+    font-weight: bold;
+    color: red;
+	cursor: move;
+}
+div > span::before {
+	content: ':::';
+}
+
+.item.dragging {
+	pointer-events: none;
+	position: fixed;
+    width: 50%;
+}
